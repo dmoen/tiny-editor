@@ -2,16 +2,35 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const WebpackErrorNotificationPlugin = require('webpack-error-notification');
 
 module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    publicPath: './dist/',
     filename: 'build.js'
   },
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {loader: 'css-loader', options: {importLoaders: 1, sourceMap: 1}},
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              plugins: [require('autoprefixer')({
+                browsers: ['last 3 versions']
+              })]
+            }
+          }
+        ]
+      },
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader?limit=10000&mimetype=application/font-woff' },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file-loader' },
       {
         test: /\.js$/,
         loader: 'babel-loader',
@@ -26,6 +45,9 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new WebpackErrorNotificationPlugin()
+  ],
   devServer: {
     watchContentBase: true,
     contentBase: path.join(__dirname, 'dev'),
@@ -94,6 +116,9 @@ if (process.env.NODE_ENV === 'production') {
       sourceMap: true,
       compress: {
         warnings: false
+      },
+      output: {
+        'ascii_only': true
       }
     }),
     new webpack.LoaderOptionsPlugin({
