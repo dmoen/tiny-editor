@@ -13,10 +13,8 @@ import 'tinymce/plugins/paste/plugin';
 import 'tinymce/plugins/link/plugin';
 import 'tinymce/plugins/autoresize/plugin';
 
-// Drag handler
-import './scripts/drag-handler.js';
-
-console.log('test');
+// Editor window
+import './scripts/editor-window.js';
 
 tinymce.init({
   selector: 'textarea',
