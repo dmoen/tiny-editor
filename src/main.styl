@@ -1,16 +1,15 @@
 #simple-editor {
 	position: fixed;
 	z-index: 99999999;
-	bottom: 0;
+	display: none;
 	left: 0;
+	bottom: 0;
 	width: 100%;
 	max-height: 100%;
-	height: 290px;
-	transition: all 0.5s;
 	background-color:rgba(0, 0, 0, 0.9);
 	
-	&.no-transition {
-		transition: no-transition;
+	&.visible {
+		display: block;
 	}
 
 	&__drag-bar {
@@ -53,6 +52,10 @@
 			    position: absolute;
 			    top: -16px;
 			}
+		}
+		
+		.close {
+			font-size: 17px;
 		}
 		
 		.dock-top {

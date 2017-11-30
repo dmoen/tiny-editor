@@ -7,6 +7,8 @@ let editor = document.getElementById('simple-editor');
 
 let editorWrapper = document.getElementById('simple-editor__editor-wrapper');
 
+let editorInitHeight = '400px';
+
 let dragStartYPos;
 
 let origEditorHeight;
@@ -36,7 +38,7 @@ let minimizeWindow = () => {
 
 let dockEditorToTop = () => {
   dockPosition = 'top';
-  editor.style.height = '290px';
+  editor.style.height = editorInitHeight;
   editor.appendChild(dragBar);
   editor.style.bottom = 'auto';
   editor.style.top = 0 + 'px';
@@ -44,7 +46,7 @@ let dockEditorToTop = () => {
 
 let dockEditorToBottom = () => {
   dockPosition = 'bottom';
-  editor.style.height = '290px';
+  editor.style.height = editorInitHeight;
   editor.prepend(dragBar);
   editor.style.top = 'auto';
   editor.style.bottom = 0 + 'px';
@@ -81,6 +83,24 @@ let autoResize = () => {
   }
 };
 
+let hideEditor = () => {
+  editor.classList.remove('visible');
+};
+
+let showEditor = (e) => {
+  e.preventDefault();
+  editor.style.height = editorInitHeight;
+  editor.classList.add('visible');
+  tinymce.activeEditor.setContent('');
+  let content = e.target.parentElement.querySelector('.tiny-editable__content').textContent;
+  tinymce.activeEditor.execCommand('mceInsertRawHTML', false, content);
+  resizeTinyMce();
+};
+
+let init = () => {
+  document.querySelector('.tiny-editable__trigger').addEventListener('click', showEditor);
+};
+
 let draggable = new Draggable({
   press: function (e) {
     origEditorHeight = editor.offsetHeight;
@@ -114,6 +134,14 @@ document.querySelector('#simple-editor__controls .minimize').addEventListener('c
   minimizeWindow();
 });
 
+document.querySelector('#simple-editor__controls .close').addEventListener('click', () => {
+  hideEditor();
+});
+
 document.querySelector('#simple-editor__controls .dock-top').addEventListener('click', () => {
   dockWindowToTop();
 });
+
+export default {
+  init: init
+};
