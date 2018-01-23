@@ -1,0 +1,74 @@
+#simple-editor {
+	position: fixed;
+	z-index: 10000;
+	display: none;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	max-height: 100%;
+	background-color:rgba(0, 0, 0, 0.9);
+	
+	&.visible {
+		display: block;
+	}
+
+	&__drag-bar {
+	    cursor: move;
+	    background: #363636;
+	    height: 36px;
+	    padding: 10px 10px 6px 10px;
+	    font-size: 15px;
+	    color: #fff;
+	    box-sizing: border-box;
+	    line-height: 1;
+	}
+	
+	&__editor-wrapper {
+		box-sizing: border-box;
+		overflow: hidden;
+		height: calc(100% - 36px);
+		position: relative;
+		user-select: none;
+		transition: opacity 0.4s, hidden 0.4s;
+		
+		&.hidden {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	
+	&__controls {
+		float: right;
+		
+		.fa {
+			cursor: pointer;
+			position: relative;
+			width: 20px;
+			margin-left: 10px;		
+		}
+		
+		.minimize {
+			&:before {
+			    position: absolute;
+			    top: -16px;
+			}
+		}
+		
+		.close {
+			font-size: 17px;
+		}
+		
+		.dock-toggle {
+			margin-right: 20px;
+		}		
+	}		
+}
+
+  #article, .mce-tinymce,.mce-stack-layout, .mce-edit-area{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+   .mce-tinymce iframe{
+    flex: 1;
+  }

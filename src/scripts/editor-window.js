@@ -1,147 +1,111 @@
-import Draggable from '@telerik/kendo-draggable';
-import tinymce from 'tinymce/tinymce';
+let editorWindow = (() => {
+  const initHeight = '400px';
 
-let dragBar = document.getElementById('simple-editor__drag-bar');
+  let editorElement = document.getElementById('simple-editor');
 
-let editor = document.getElementById('simple-editor');
+  let editorWrapElement = document.getElementById('simple-editor__editor-wrapper');
 
-let editorWrapper = document.getElementById('simple-editor__editor-wrapper');
+  let origHeight;
 
-let editorInitHeight = '400px';
+  let dockPosition = 'bottom';
 
-let dragStartYPos;
+  let fireResizeEvent = () => {
+    let event = document.createEvent('Event');
+    event.initEvent('editorResize', true, true);
+    editorElement.dispatchEvent(event);
+  };
 
-let origEditorHeight;
+  let fireShowEvent = () => {
+    let event = document.createEvent('Event');
+    event.initEvent('editorShow', true, true);
+    editorElement.dispatchEvent(event);
+  };
 
-let dragEndYPos;
+  let fireDockToTopEvent = () => {
+    let event = document.createEvent('Event');
+    event.initEvent('editorDockToTop', true, true);
+    editorElement.dispatchEvent(event);
+  };
 
-let dockPosition = 'bottom';
+  let fireDockToBottomEvent = () => {
+    let event = document.createEvent('Event');
+    event.initEvent('editorDockToBottom', true, true);
+    editorElement.dispatchEvent(event);
+  };
 
-let resizeTinyMce = () => {
-  tinymce.activeEditor.theme.resizeTo(window.innerWidth, editorWrapper.clientHeight - 101);
-};
+  let show = () => {
+    editorElement.style.height = initHeight;
+    editorElement.classList.add('visible');
+  };
 
-let maximizeWindow = () => {
-  editor.style.height = window.innerHeight + 'px';
-  resizeTinyMce();
-};
+  let dockToTop = () => {
+    dockPosition = 'top';
+    editorElement.style.height = initHeight;
+    // editorElement.appendChild(windowBar.element);
+    editorElement.style.bottom = 'auto';
+    editorElement.style.top = 0 + 'px';
+  };
 
-let minimizeWindow = () => {
-  if (dockPosition === 'bottom') {
-    dockEditorToBottom();
-  } else {
-    dockEditorToTop();
-  }
-  let dragBarHeight = dragBar.offsetHeight;
-  editor.style.height = dragBarHeight + 'px';
-};
+  let dockToBottom = () => {
+    dockPosition = 'bottom';
+    editorElement.style.height = initHeight;
+    // editorElement.prepend(windowBar.element);
+    editorElement.style.top = 'auto';
+    editorElement.style.bottom = 0 + 'px';
+  };
 
-let dockEditorToTop = () => {
-  dockPosition = 'top';
-  editor.style.height = editorInitHeight;
-  editor.appendChild(dragBar);
-  editor.style.bottom = 'auto';
-  editor.style.top = 0 + 'px';
-};
+  return {
+    init: () => {
+      show();
+      fireShowEvent();
+    },
+    initResize: () => {
+      origHeight = editorElement.offsetHeight;
+    },
+    endResize: () => {
+      editorWrapElement.classList.remove('hidden');
+      fireResizeEvent();
+    },
+    dragResize: (dragDistance) => {
+      editorWrapElement.classList.add('hidden');
+      if (dockPosition === 'bottom') {
+        editorElement.style.height = dragDistance + origHeight + 'px';
+      } else {
+        editorElement.style.height = dragDistance * -1 + origHeight + 'px';
+      }
+    },
+    autoResize: function (barPos) {
+      if ((barPos === 'top' && dockPosition === 'bottom') ||
+        (barPos === 'bottom' && dockPosition === 'top')) {
+        this.maximize();
+      } else {
+        this.minimize();
+      }
+    },
+    close: () => {
+      editorElement.classList.remove('visible');
+    },
+    minimize: () => {
+      editorElement.style.height = editorElement.offsetHeight - editorWrapElement.offsetHeight + 'px';
+      fireResizeEvent();
+    },
+    maximize: () => {
+      editorElement.style.height = window.innerHeight + 'px';
+      fireResizeEvent();
+    },
+    dockToggle: () => {
+      if (dockPosition === 'bottom') {
+        dockToTop();
+        fireDockToTopEvent();
+      } else {
+        dockToBottom();
+        fireDockToBottomEvent();
+      }
+      fireResizeEvent();
+    },
+    element: editorElement,
+    wrapElement: editorWrapElement
+  };
+})();
 
-let dockEditorToBottom = () => {
-  dockPosition = 'bottom';
-  editor.style.height = editorInitHeight;
-  editor.prepend(dragBar);
-  editor.style.top = 'auto';
-  editor.style.bottom = 0 + 'px';
-};
-
-let dockWindowToTop = () => {
-  if (dockPosition === 'bottom') {
-    dockEditorToTop();
-  } else {
-    dockEditorToBottom();
-  }
-  resizeTinyMce();
-};
-
-let dragResize = (e) => {
-  let dragDistance = dragStartYPos - dragEndYPos;
-  editor.style.height = dragDistance + origEditorHeight + 'px';
-};
-
-let reverseDragResize = (e) => {
-  let dragDistance = (dragStartYPos - dragEndYPos) * -1;
-  editor.style.height = dragDistance + origEditorHeight + 'px';
-};
-
-let autoResize = () => {
-  let dragDistance = (dragStartYPos - dragEndYPos);
-  let dockedDistance = (dockPosition === 'bottom') ? dragDistance : dragDistance * -1;
-  let editorHeight = dockedDistance + origEditorHeight;
-  let windowLeft = window.innerHeight - editorHeight;
-  if (windowLeft < 100) {
-    maximizeWindow();
-  } else if (editorHeight < 100) {
-    minimizeWindow();
-  }
-};
-
-let hideEditor = () => {
-  editor.classList.remove('visible');
-};
-
-let showEditor = (e) => {
-  e.preventDefault();
-  editor.style.height = editorInitHeight;
-  editor.classList.add('visible');
-  tinymce.activeEditor.setContent('');
-  let content = e.target.parentElement.querySelector('.tiny-editable__content').textContent;
-  tinymce.activeEditor.execCommand('mceInsertRawHTML', false, content);
-  resizeTinyMce();
-};
-
-let init = () => {
-  document.querySelector('.tiny-editable__trigger').addEventListener('click', showEditor);
-};
-
-let draggable = new Draggable({
-  press: function (e) {
-    origEditorHeight = editor.offsetHeight;
-    dragStartYPos = e.pageY;
-  },
-  drag: function (e) {
-    dragEndYPos = e.pageY;
-    editorWrapper.classList.add('hidden');
-    if (dockPosition === 'top') {
-      reverseDragResize(e);
-    } else {
-      dragResize(e);
-    }
-  },
-  release: function (e) {
-    editorWrapper.classList.remove('hidden');
-    if (origEditorHeight !== editor.offsetHeight) {
-      autoResize(e);
-    }
-    resizeTinyMce();
-  }
-});
-
-draggable.bindTo(dragBar);
-
-document.querySelector('#simple-editor__controls .maximize').addEventListener('click', () => {
-  maximizeWindow();
-});
-
-document.querySelector('#simple-editor__controls .minimize').addEventListener('click', () => {
-  minimizeWindow();
-});
-
-document.querySelector('#simple-editor__controls .close').addEventListener('click', () => {
-  hideEditor();
-});
-
-document.querySelector('#simple-editor__controls .dock-top').addEventListener('click', () => {
-  dockWindowToTop();
-});
-
-export default {
-  init: init
-};
+export default editorWindow;

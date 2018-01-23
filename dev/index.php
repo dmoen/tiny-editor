@@ -152,7 +152,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div id="simple-editor">
   <div id="simple-editor__drag-bar">
     <div id="simple-editor__controls">
-      <a title="Toggle dock mode" class="fa fa-window-maximize dock-top"></a>
+      <a title="Toggle dock mode" class="fa fa-window-maximize dock-toggle"></a>
       <a title="Maximize editor" class="fa fa-window-maximize maximize"></a>
       <a title="Minimize editor" class="fa fa-window-minimize minimize"></a>
       <a title="Close editor" class="fa fa-times close"></a>      

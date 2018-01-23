@@ -1,0 +1,257 @@
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP  11. upload->process() /home/daniel/projects/tiny-editor/core/ImageUpload.php:43
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP  12. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:4715
+[18-Jan-2018 23:42:10 Europe/Berlin] PHP  13. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:42:19 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:43:01 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:43:01 Europe/Berlin] 25307
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP  11. upload->process() /home/daniel/projects/tiny-editor/core/ImageUpload.php:43
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP  12. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:4715
+[18-Jan-2018 23:44:09 Europe/Berlin] PHP  13. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:44:37 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP Notice:  Undefined index: user in /home/daniel/projects/tiny-editor/core/routes.php on line 44
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:43-52}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  11. upload->process() /home/daniel/projects/tiny-editor/core/ImageUpload.php:43
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  12. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:4715
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  13. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:44:47 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP Notice:  Undefined index: user in /home/daniel/projects/tiny-editor/core/routes.php on line 44
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:43-52}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  11. upload->process() /home/daniel/projects/tiny-editor/core/ImageUpload.php:43
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  12. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:4715
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  13. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php on line 2678
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP Stack trace:
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   1. {main}() /home/daniel/projects/tiny-editor/edit-me/index.php:0
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   2. require() /home/daniel/projects/tiny-editor/edit-me/index.php:2
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   3. Silex\Application->run() /home/daniel/projects/tiny-editor/core/bootstrap.php:37
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   4. Silex\Application->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:477
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   5. Symfony\Component\HttpKernel\HttpKernel->handle() /home/daniel/projects/tiny-editor/vendor/silex/silex/src/Silex/Application.php:496
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   6. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:68
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   7. call_user_func_array:{/home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   8. {closure:/home/daniel/projects/tiny-editor/core/routes.php:54-66}() /home/daniel/projects/tiny-editor/vendor/symfony/http-kernel/HttpKernel.php:153
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP   9. Dmoen\ImageUpload->process() /home/daniel/projects/tiny-editor/core/routes.php:58
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  10. Dmoen\ImageUpload->addImage() /home/daniel/projects/tiny-editor/core/ImageUpload.php:21
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  11. upload->__construct() /home/daniel/projects/tiny-editor/core/ImageUpload.php:31
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  12. upload->upload() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2004
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  13. upload->init() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:2067
+[18-Jan-2018 23:44:48 Europe/Berlin] PHP  14. upload->getsize() /home/daniel/projects/tiny-editor/vendor/verot/class.upload.php/src/class.upload.php:1725

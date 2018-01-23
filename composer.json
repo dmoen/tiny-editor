@@ -1,0 +1,30 @@
+{
+    "name": "dmoen/tiny-editor",
+    "description": "A tiny content editor for tiny pages.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Daniel Moen",
+            "email": "moen.daniel@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^2.4",
+        "silex/silex": "^2.2",
+        "twig/twig": "^2.4",
+        "rych/phpass": "^2.0",
+        "duncan3dc/sessions": "^1.3",
+        "verot/class.upload.php": "^0.33.0"
+    },
+    "autoload": {
+        "psr-4": {"Dmoen\\": "core/"},
+        "files": ["core/functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {"Dmoen\\Tests\\": "tests/"}
+    },    
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
